@@ -65,6 +65,3 @@ def get_global_avg():
             cursor.execute(GLOBAL_NUMBER_OF_DAYS)
             days = cursor.fetchone()[0]
     return {"average": round(average, 2), "days": days}
-    
-if __name__ == '__main__':
-    app.run(debug=True)
